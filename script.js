@@ -1,11 +1,29 @@
 function toggleSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section.style.display === "block") {
-        section.style.display = "none";
+    const sections = document.querySelectorAll('.section-content');
+    const targetSection = document.getElementById(sectionId);
+    const body = document.body;
+    let anyActive = false;
+
+    sections.forEach((section) => {
+        if (section.id === sectionId) {
+            section.classList.toggle('active');
+            if (section.classList.contains('active')) {
+                anyActive = true;
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        } else {
+            section.classList.remove('active');
+        }
+    });
+
+    if (anyActive) {
+        body.classList.add('dimmed');
     } else {
-        section.style.display = "block";
+        body.classList.remove('dimmed');
     }
 }
+
+
 // Initialize an empty bucket
 const bucket = [];
 
@@ -39,24 +57,29 @@ function updateBucketUI() {
 
     // Calculate total items and total price
     const totalItems = bucket.length;
-    const totalPrice = bucket.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const totalPrice = bucket.reduce((sum, item) => sum + item.price, 0);
 
     // Update bucket summary
     bucketCount.innerText = `Items in Bucket: ${totalItems}`;
     bucketTotal.innerText = `Total: €${totalPrice.toFixed(2)}`;
+
+    // Trigger pop-in animation
+    bucketCount.classList.add('pop');
+    setTimeout(() => bucketCount.classList.remove('pop'), 500);
 
     // Update bucket details dropdown
     bucketItems.innerHTML = '';
     bucket.forEach((item, index) => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `
-            <span>${item.name} - €${item.price} x ${item.quantity}</span>
+            <span>${item.name} - €${item.price}</span>
             <button class="bucket-action-btn" onclick="removeFromBucket(${index})">Remove</button>
             <button class="bucket-action-btn" onclick="duplicateItem(${index})">Duplicate</button>
         `;
         bucketItems.appendChild(listItem);
     });
 }
+
 
 // Function to toggle the dropdown details
 function toggleBucketDetails() {
