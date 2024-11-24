@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Parrondo Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-container">
+        <!-- Header -->
+        <header class="menu-header">
+        </header>
+
+        <!-- Sections -->
+        <main class="menu-main">
+            <section class="menu-section">
+                <h2 class="section-title" onclick="toggleSection('entrantes')">ENTRANTES CASA PARRONDO</h2>
+                <div id="entrantes" class="section-content">
+                    <!--Plats-->
+                    <div class="menu-item">
+                        <h3>Paté de perdiz a la esencia de la manzana</h3>
+                        <p>€16.00</p>
+                        <button onclick="addToBucket('Paté de perdiz', 16.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Croquetas al estilo Parrondo</h3>
+                        <p>€14.00</p>
+                        <button onclick="addToBucket('Croquetas al estilo Parrondo', 14.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Huevos rotos de pueblo con jamón ibérico</h3>
+                        <p>€16.00</p>
+                        <button onclick="addToBucket('Huevos rotos', 16.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Pulpo a la gallega con cachelos</h3>
+                        <p>€24.00</p>
+                        <button onclick="addToBucket('Pulpo a la gallega', 24.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Callos al estilo Casa Parrondo</h3>
+                        <p>€16.00</p>
+                        <button onclick="addToBucket('Callos al estilo', 16.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Pulpo a la vinagreta</h3>
+                        <p>€22.00</p>
+                        <button onclick="addToBucket('Pulpo a la vinagreta', 22.00)">Add to Bucket</button>
+                    </div>
+                                        <!--Plats--> 
+
+                </div>
+            </section>
+            <section class="menu-section">
+                <h2 class="section-title" onclick="toggleSection('ibericos')">Ibéricos y quesos Casa Parrondo</h2>
+                <div id="ibericos" class="section-content">
+                     <!--Plats-->
+                     <div class="menu-item">
+                        <h3>Jamón de Jabugo especial</h3>
+                        <p>€26.00</p>
+                        <button onclick="addToBucket('Jamón de Jabugo especial', 26.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Lomo Ibérico 5 Bellotas</h3>
+                        <p>€26.00</p>
+                        <button onclick="addToBucket('Lomo Ibérico 5 Bellotas', 26.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Entremeses Ibéricos especiales de la Casa</h3>
+                        <p>€22.00</p>
+                        <button onclick="addToBucket('Entremeses Ibéricos especiales de la Casa', 22.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Cecina de León de la Finca de Parrondo</h3>
+                        <p>€18.00</p>
+                        <button onclick="addToBucket('Cecina de León de la Finca de Parrondo', 18.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Queso puro de oveja</h3>
+                        <p>€12.00</p>
+                        <button onclick="addToBucket('Queso puro de oveja', 12.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Queso de Cabrales</h3>
+                        <p>€12.00</p>
+                        <button onclick="addToBucket('Queso de Cabrales', 12.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Queso del Vicio elaborado en Casa Parrondo</h3>
+                        <p>€12.00</p>
+                        <button onclick="addToBucket('Queso del Vicio elaborado en Casa Parrondo', 12.00)">Add to Bucket</button>
+                    </div>
+                                        <!--Plats--> 
+                </div>
+            </section>
+            <section class="menu-section">
+                <h2 class="section-title" onclick="toggleSection('ensaladas')">ENSALADAS Y VERDURAS CASA PARRONDO</h2>
+                <div id="ensaladas" class="section-content">
+                     <!--Plats-->
+                     <div class="menu-item">
+                        <h3>Ensalada mixta de Casa Parrondo</h3>
+                        <p>€12.00</p>
+                        <button onclick="addToBucket('Ensalada mixta de Casa Parrondo', 12.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Ensalada verde (tomate, lechuga y cebolla)</h3>
+                        <p>€10.00</p>
+                        <button onclick="addToBucket('Ensalada verde', 10.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Ensalada de pimientos del piquillo con ventresca y anchoas</h3>
+                        <p>€18.00</p>
+                        <button onclick="addToBucket('Ensalada de pimientos del piquillo', 18.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Endivias con cabrales</h3>
+                        <p>€16.00</p>
+                        <button onclick="addToBucket('Endivias con cabrales', 16.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Parrillada de verduras de la huerta de Parrondo</h3>
+                        <p>€16.00</p>
+                        <button onclick="addToBucket('Parrillada de verduras', 16.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Pimientos rellenos especiales de la Casa</h3>
+                        <p>€16.00</p>
+                        <button onclick="addToBucket('Pimientos rellenos', 16.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Alcachofas al ajillo con jamón ibérico</h3>
+                        <p>€18.00</p>
+                        <button onclick="addToBucket('Alcachofas al ajillo con jamón ibérico', 18.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Alcachofas con almejas en salsa verde</h3>
+                        <p>€20.00</p>
+                        <button onclick="addToBucket('Alcachofas con almejas', 20.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Alcachofas con foie de pato</h3>
+                        <p>€26.00</p>
+                        <button onclick="addToBucket('Alcachofas con foie de pato', 26.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Trigueros especiales con jamón ibérico</h3>
+                        <p>€16.00</p>
+                        <button onclick="addToBucket('Trigueros especiales con jamón ibérico', 16.00)">Add to Bucket</button>
+                    </div>
+                                        <!--Plats--> 
+                </div>
+            </section>
+            <section class="menu-section">
+                <h2 class="section-title" onclick="toggleSection('arroces')">ARROCES CALDOSOS CASA PARRONDO</h2>
+                <div id="arroces" class="section-content">
+                    <div class="menu-item">
+                        <h3>Arroz de la Casa especial caldoso con pixín, almejas y carabineros (para 2 personas)</h3>
+                        <p>€50.00</p>
+                        <button onclick="addToBucket('Arroz de la Casa especial caldoso', 50.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Arroz con bogavante, almejas y gambas especial de la Casa (para 2 personas)</h3>
+                        <p>€45.00</p>
+                        <button onclick="addToBucket('Arroz con bogavante', 45.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Caldereta de pescado y marisco al estilo de Luarca (para 2 personas)</h3>
+                        <p>€60.00</p>
+                        <button onclick="addToBucket('Caldereta de pescado y marisco', 60.00)">Add to Bucket</button>
+                    </div>
+                </div>
+            </section>
+            <section class="menu-section">
+                <h2 class="section-title" onclick="toggleSection('fabes')">FABES CASA PARRONDO</h2>
+                <div id="fabes" class="section-content">
+                    <div class="menu-item">
+                        <h3>Fabada asturiana especial del monje</h3>
+                        <p>€18.00</p>
+                        <button onclick="addToBucket('Fabada asturiana especial del monje', 18.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Fabes de la huerta de Parrondo con almejas</h3>
+                        <p>€18.00</p>
+                        <button onclick="addToBucket('Fabes de la huerta de Parrondo con almejas', 18.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Fabes con callos</h3>
+                        <p>€16.00</p>
+                        <button onclick="addToBucket('Fabes con callos', 16.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Pote asturiano con berzas y arbeyos</h3>
+                        <p>€16.00</p>
+                        <button onclick="addToBucket('Pote asturiano con berzas y arbeyos', 16.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Sopa de marisco al estilo Casa Consuelo de Luarca</h3>
+                        <p>€15.00</p>
+                        <button onclick="addToBucket('Sopa de marisco al estilo Casa Consuelo de Luarca', 15.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Fabes de la huerta de Parrondo con almejas y pulpo (para 2 personas)</h3>
+                        <p>€30.00</p>
+                        <button onclick="addToBucket('Fabes de la huerta de Parrondo con almejas y pulpo', 30.00)">Add to Bucket</button>
+                    </div>
+            
+
+                </div>
+            </section>
+            <section class="menu-section">
+                <h2 class="section-title" onclick="toggleSection('pescados')">PESCADOS Y MARISCOS CASA PARRONDO</h2>
+                <div id="pescados" class="section-content">
+                    <div class="menu-item">
+                        <h3>Merluza a la sidra al estilo de Casa Parrondo</h3>
+                        <p>€24.00</p>
+                        <button onclick="addToBucket('Merluza a la sidra al estilo de Casa Parrondo', 24.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Merluza a la plancha con ensalada</h3>
+                        <p>€20.00</p>
+                        <button onclick="addToBucket('Merluza a la plancha con ensalada', 20.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Merluza a la romana con ensalada</h3>
+                        <p>€20.00</p>
+                        <button onclick="addToBucket('Merluza a la romana con ensalada', 20.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Merluza a la gallega con Cachelos</h3>
+                        <p>€24.00</p>
+                        <button onclick="addToBucket('Merluza a la gallega con Cachelos', 24.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Lomos de merluza especiales con almejas</h3>
+                        <p>€26.00</p>
+                        <button onclick="addToBucket('Lomos de merluza especiales con almejas', 26.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Pixín marinero con almejas y langostinos</h3>
+                        <p>€26.00</p>
+                        <button onclick="addToBucket('Pixín marinero con almejas y langostinos', 26.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Lomos especiales de bacalao a la Vizcaína</h3>
+                        <p>€26.00</p>
+                        <button onclick="addToBucket('Lomos especiales de bacalao a la Vizcaína', 26.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Almejas a la sidra especiales de la Casa</h3>
+                        <p>€30.00</p>
+                        <button onclick="addToBucket('Almejas a la sidra especiales de la Casa', 30.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Gambas de Huelva a la plancha</h3>
+                        <p>€40.00</p>
+                        <button onclick="addToBucket('Gambas de Huelva a la plancha', 40.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Gamba roja de garrucha</h3>
+                        <p>€40.00</p>
+                        <button onclick="addToBucket('Gamba roja de garrucha', 40.00)">Add to Bucket</button>
+                    </div>
+
+                </div>
+            </section>
+            <section class="menu-section">
+                <h2 class="section-title" onclick="toggleSection('carnes')">CARNES CASA PARRONDO</h2>
+                <div id="carnes" class="section-content">
+                    <div class="menu-item">
+                        <h3>Chuletón de buey al peso</h3>
+                        <p>€60.00</p>
+                        <button onclick="addToBucket('Chuletón de buey al peso', 60.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Entrecot de buey al cabrales</h3>
+                        <p>€28.00</p>
+                        <button onclick="addToBucket('Entrecot de buey al cabrales', 28.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Chuletón de Ternera Roxa asturiana</h3>
+                        <p>€26.00</p>
+                        <button onclick="addToBucket('Chuletón de Ternera Roxa asturiana', 26.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Solomillo de buey especial de la Casa</h3>
+                        <p>€28.00</p>
+                        <button onclick="addToBucket('Solomillo de buey especial de la Casa', 28.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Chuletinas de cordero (6 piezas/ración)</h3>
+                        <p>€22.00</p>
+                        <button onclick="addToBucket('Chuletinas de cordero (6 piezas/ración)', 22.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Paletilla de lechal a la segoviana con guarnición</h3>
+                        <p>€28.00</p>
+                        <button onclick="addToBucket('Paletilla de lechal a la segoviana con guarnición', 28.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Cachopón de ternera especial de la casa</h3>
+                        <p>€24.00</p>
+                        <button onclick="addToBucket('Cachopón de ternera especial de la casa', 24.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Cochinillo asado a la segoviana con guarnición</h3>
+                        <p>€28.00</p>
+                        <button onclick="addToBucket('Cochinillo asado a la segoviana con guarnición', 28.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>1⁄4 de cabrito a la sidra especial Casa Parrondo</h3>
+                        <p>€50.00</p>
+                        <button onclick="addToBucket('1⁄4 de cabrito a la sidra especial Casa Parrondo', 50.00)">Add to Bucket</button>
+                    </div>
+                </div>
+            </section>
+            <section class="menu-section">
+                <h2 class="section-title" onclick="toggleSection('postres')">POSTRES CASA PARRONDO</h2>
+                <div id="postres" class="section-content">
+
+                    <div class="menu-item">
+                        <h3>Arroz con leche asturiano Casa Parrondo</h3>
+                        <p>€8.00</p>
+                        <button onclick="addToBucket('Arroz con leche asturiano Casa Parrondo', 8.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Leche frita con nata</h3>
+                        <p>€6.00</p>
+                        <button onclick="addToBucket('Leche frita con nata', 6.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Manzana reineta asturiana asada</h3>
+                        <p>€6.00</p>
+                        <button onclick="addToBucket('Manzana reineta asturiana asada', 6.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Tarta especial de la Casa</h3>
+                        <p>€6.00</p>
+                        <button onclick="addToBucket('Tarta especial de la Casa', 6.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Tarta de almendra Carvayón</h3>
+                        <p>€12.00</p>
+                        <button onclick="addToBucket('Tarta de almendra Carvayón', 12.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Tarta helada al whisky</h3>
+                        <p>€6.00</p>
+                        <button onclick="addToBucket('Tarta helada al whisky', 6.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Flan de la Casa con nata</h3>
+                        <p>€6.00</p>
+                        <button onclick="addToBucket('Flan de la Casa con nata', 6.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Natillas especiales de la abuela</h3>
+                        <p>€6.00</p>
+                        <button onclick="addToBucket('Natillas especiales de la abuela', 6.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Surtido de postres caseros de Casa Parrondo (2 personas)</h3>
+                        <p>€12.00</p>
+                        <button onclick="addToBucket('Surtido de postres caseros de Casa Parrondo (2 personas)', 12.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Frixuelos rellenos de compota de manzana</h3>
+                        <p>€12.00</p>
+                        <button onclick="addToBucket('Frixuelos rellenos de compota de manzana', 12.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Cuajada de la pastora</h3>
+                        <p>€6.00</p>
+                        <button onclick="addToBucket('Cuajada de la pastora', 6.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Queso del Vicio con membrillo de manzana</h3>
+                        <p>€8.00</p>
+                        <button onclick="addToBucket('Queso del Vicio con membrillo de manzana', 8.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Yogurt natural</h3>
+                        <p>€4.00</p>
+                        <button onclick="addToBucket('Yogurt natural', 4.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Requesón de Abredo con miel</h3>
+                        <p>€6.00</p>
+                        <button onclick="addToBucket('Requesón de Abredo con miel', 6.00)">Add to Bucket</button>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Fruta del tiempo</h3>
+                        <p>€4.00</p>
+                        <button onclick="addToBucket('Fruta del tiempo', 4.00)">Add to Bucket</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <div id="bucket-summary">
+        <p id="bucket-count">Items in Bucket: 0</p>
+        <p id="bucket-total">Total: €0.00</p>
+        <button id="view-bucket-btn" onclick="toggleBucketDetails()">View Bucket</button>
+        <div id="bucket-details" class="hidden">
+            <ul id="bucket-items"></ul>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
